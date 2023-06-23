@@ -1,0 +1,17 @@
+import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server'
+
+export async function middleware(request: NextRequest) {
+	if (request.nextUrl.pathname === '/login') {
+		return NextResponse.next()
+	}
+
+	if (request.nextUrl.pathname === '/authenticated') {
+		if (request.nextUrl.searchParams.get('admin') !== null) {
+			return NextResponse.next()
+		}
+
+		request.nextUrl.pathname = '/login'
+		return NextResponse.redirect(request.nextUrl.toString())
+	}
+}
