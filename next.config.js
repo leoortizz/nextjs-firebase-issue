@@ -8,6 +8,8 @@ const nextConfig = {
 		domains: ['images.unsplash.com']
 	},
 
+	// output: 'standalone',
+
 	rewrites: async () => [{ source: '/monogram', destination: 'https://monogram.io' }, ...rewrites]
 }
 
