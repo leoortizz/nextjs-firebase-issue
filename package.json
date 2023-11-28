@@ -7,7 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"deploy": "cd ../../firebase-framework-tools && npm run build && cd ../firebase-tests/nextjs-firebase-issue && node ../../firebase-tools/lib/bin/firebase.js deploy --debug"
+		"build-prod": "cd ../../firebase-tools && npm run build && cd ../firebase-tests/nextjs-firebase-issue && node ../../firebase-tools/lib/bin/firebase.js emulators:exec 'exit 0'",
+		"deploy": "cd ../../firebase-framework-tools && npm run build && cd ../firebase-tests/nextjs-firebase-issue && node ../../firebase-tools/lib/bin/firebase.js deploy",
+		"deploy-pr": "cd ../../firebase-frameworks-prs && npm run build && cd ../firebase-tests/nextjs-firebase-issue && node ../../firebase-tools/lib/bin/firebase.js deploy",
+		"deploy-channel": "cd ../../firebase-framework-tools && npm run build && cd ../firebase-tests/nextjs-firebase-issue && node ../../firebase-tools/lib/bin/firebase.js hosting:channel:deploy channel-test"
 	},
 	"dependencies": {
 		"@types/node": "20.2.5",
@@ -18,7 +21,6 @@
 		"next": "^14.0.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"firebase-frameworks": "file:../../firebase-framework-tools",
 		"typescript": "5.0.4"
 	},
 	"prettier": "@monogram/prettier-config",
