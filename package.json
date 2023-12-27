@@ -3,28 +3,28 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
+    "dev": "next dev",
+    "prebuild": "npm run pages-json",
+    "pages-json": "ts-node ./scripts/pages-json.ts",
+    "build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"deploy": "cd ../firebase-framework-tools && npm run build && cd ../nextjs-firebase-issue && firebase deploy --debug"
-	},
-	"dependencies": {
-		"@types/node": "20.2.5",
-		"@types/react": "18.2.7",
-		"@types/react-dom": "18.2.4",
-		"eslint": "8.41.0",
-		"eslint-config-next": "13.4.4",
-		"firebase-frameworks": "file:../firebase-framework-tools",
-		"next": "^13.4.6",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"typescript": "5.0.4"
-	},
-	"prettier": "@monogram/prettier-config",
-	"devDependencies": {
-		"@monogram/prettier-config": "^0.2.0",
-		"express": "^4.18.2",
-		"firebase-functions": "^4.4.0"
-	}
+  },
+  "dependencies": {
+    "next": "^14.0.5-canary.28",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "prettier": "@monogram/prettier-config",
+  "devDependencies": {
+    "@monogram/eslint-config": "^0.1.4",
+    "@monogram/prettier-config": "^0.2.0",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
 }
