@@ -1,0 +1,59 @@
+{
+  "allCommits": 41,
+  "allStats": {
+    "total": 40029,
+    "additions": 21146,
+    "deletions": 18883,
+    "changes": 2263
+  },
+  "commitsPerAuthor": {
+    "leoortizz": 23,
+    "cfofiu": 2,
+    "chalosalvador": 5,
+    "austincrim": 9,
+    "JulienMartel": 2
+  },
+  "statsPerAuthor": {
+    "leoortizz": {
+      "total": 4908,
+      "additions": 3659,
+      "deletions": 1249
+    },
+    "cfofiu": {
+      "total": 435,
+      "additions": 400,
+      "deletions": 35
+    },
+    "chalosalvador": {
+      "total": 779,
+      "additions": 623,
+      "deletions": 156
+    },
+    "austincrim": {
+      "total": 33829,
+      "additions": 16388,
+      "deletions": 17441
+    },
+    "JulienMartel": {
+      "total": 78,
+      "additions": 76,
+      "deletions": 2
+    }
+  },
+  "commitsPerRepo": {
+    "firebase/firebase-tools": 31,
+    "FirebaseExtended/firebase-framework-tools": 10
+  },
+  "statsPerRepo": {
+    "firebase/firebase-tools": {
+      "total": 18829,
+      "additions": 14296,
+      "deletions": 4533
+    },
+    "FirebaseExtended/firebase-framework-tools": {
+      "total": 21200,
+      "additions": 6850,
+      "deletions": 14350
+    }
+  }
+}

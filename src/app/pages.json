@@ -1,0 +1,23 @@
+[
+  "/",
+  "/_not-found",
+  "/anchor",
+  "/authenticated",
+  "/context",
+  "/icon",
+  "/image-test",
+  "/loading",
+  "/login",
+  "/og",
+  "/og/opengraph-image",
+  "/og/static",
+  "/og/static/opengraph-image",
+  "/ppr",
+  "/rsc/dynamic",
+  "/rsc/static",
+  "/server-action",
+  "/server-side-props",
+  "/static-1",
+  "/static-2",
+  "/dynamic-routes/2"
+]
