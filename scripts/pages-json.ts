@@ -7,7 +7,7 @@ import { join } from 'path'
 	execSync('rm -rf .next/routes-manifest.json')
 
 	console.log('building...')
-	const build = spawn('npm', ['run', 'build'], {
+	const build = spawn('npx', ['next', 'build'], {
 		stdio: 'ignore'
 	})
 

@@ -1,19 +1,20 @@
 {
-	"name": "nextjs-firebase-issue",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
+  "name": "nextjs-firebase-issue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
     "dev": "next dev",
     "prebuild": "npm run pages-json",
-    "pages-json": "ts-node ./scripts/pages-json.ts",
+    "pages-json": "tsx ./scripts/pages-json.ts",
     "build": "next build",
-		"start": "next start",
-		"lint": "next lint",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.0.5-canary.28",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "^15.0.0-canary.112",
+    "react": "^19.0.0-rc-187dd6a7-20240806",
+    "react-dom": "^19.0.0-rc-187dd6a7-20240806",
+    "sharp": "^0.33.4"
   },
   "prettier": "@monogram/prettier-config",
   "devDependencies": {
@@ -25,6 +26,7 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.17.0",
     "typescript": "^5.3.3"
   }
 }

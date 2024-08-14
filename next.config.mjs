@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 // @ts-check
 
-const rewrites = require('./rewrites')
+import rewrites from './rewrites.js'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,7 +13,11 @@ const nextConfig = {
 		ppr: true
 	},
 
+	eslint: {
+		ignoreDuringBuilds: true
+	},
+
 	rewrites: async () => [{ source: '/monogram', destination: 'https://monogram.io' }, ...rewrites]
 }
 
-module.exports = nextConfig
+export default nextConfig
